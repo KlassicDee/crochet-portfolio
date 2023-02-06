@@ -22,8 +22,9 @@
 .navbar ul li{
     list-style: none;
     display:inline-block;
-    margin:0 20px;
+    margin:0 30px;
     position: relative;
+    justify-content: space-between;
 }
 .navbar ul li a{
     text-decoration: none;
@@ -43,11 +44,23 @@
     width:80px;
     cursor: pointer;
 }
-
+.hamburger{
+    display: none;
+}
 .navbar ul li :hover::after{
     width:100%;
 }
-
+.checkbtn{
+    font-size: 20px;
+    color:black;
+    float:left;
+    text-decoration: none;
+    width:100px; 
+    height: 50px; 
+    padding: 25px 0;
+   margin: 20px 10px;
+   display: none;
+}
 .content{
     width:100%;
     position:absolute;
@@ -97,4 +110,71 @@ button:hover span{
 }
 button:hover {
     border:none;
+}
+
+@media only screen and (max-width:850px) {
+    .navbar{
+        padding: 0 30px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        float:right;
+        margin-right: 25px ;
+        margin-top: 25px;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 5px 0;
+    }
+.logo{
+    position: absolute;
+    top: 30px;
+    left:30px; 
+}
+.content{
+display: none;
+}
+ /* .navlinks{
+    position: absolute;
+    top:80px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: black;
+    transition: 0.2s;
+    
+} */
+
+#navlinks{
+    position: absolute;
+    height: 100vh;
+    width:100%;
+    background: ;
+    top:150px;
+    left:0;
+   transition: all .5s;
+    text-align: center;
+}
+#navlinks li{
+    text-align: center;
+    display: block;
+    margin-left: 100px;
+ padding:20px 20px;
+}
+#navlinks li a:hover,a :active{
+   
+    background: none;
+    color:#0ad1bd;
+    text-decoration: none;
+    
+}
+.navbar.active{
+    height:450px
+}
+
+    
 }
