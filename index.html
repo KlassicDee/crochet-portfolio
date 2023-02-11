@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=1, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" ></script> -->
+
     <title>Portfolio page</title>
   </head>
   <body>
@@ -15,21 +15,24 @@
         <img src="logo.webp" class="logo" />
         
         <ul id="navlinks">
+          <div class="active">
           <li><a href="#">Home</a></li>
           <li><a href="#">Designs</a></li>
           <li><a href="#">Order</a></li>
           <li><a href="#">Price List</a></li>
           <li><a href="#">Contact</a></li>
+        </div>
         </ul>
-        <!-- <label class="checkbtn">
-    <i class="fas fa-bar"></i></label> -->
+       
       </div>
+   
 <div class="hamburger">
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"></div>
 </div>
-      <div class="content">
+
+      <div id="content" class="text">
         <h1>KLASSIC CROCHET WORLD</h1>
         <p>Luxurious world of crochet fashion;<br />handmade with love.</p>
         <div>
@@ -42,18 +45,14 @@
   <script>
     hamBurger = document.querySelector(".hamburger");
 
-    hamburger.onclick = function () {
-    navBar = document.querySelector(".navbar");
+    hamBurger.onclick = function () {
+    navBar = document.querySelector("#navlinks");
        navBar.classList.toggle("active");
       
     }
-  </script>
-  <!-- <script>
-    const hamburger = document.querySelector(
-      const navBar = document.querySelector
-
-
-    )
-  </script> -->
+  </script> 
+   <script>
+    src='script.js'
+  </script> 
   </body>
 </html>

@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
 .navbar ul li{
@@ -25,6 +26,7 @@
     margin:0 30px;
     position: relative;
     justify-content: space-between;
+    
 }
 .navbar ul li a{
     text-decoration: none;
@@ -40,6 +42,8 @@
     left: 0;
     bottom: -10px;
 }
+
+
 .logo{
     width:80px;
     cursor: pointer;
@@ -61,7 +65,7 @@
    margin: 20px 10px;
    display: none;
 }
-.content{
+#content{
     width:100%;
     position:absolute;
     top: 50%;
@@ -69,11 +73,10 @@
     text-align: center;
     color:  rgb(253, 250, 250);
 }
-.content h1{
+#content h1{
     font-size:70px;
     margin-top: 80px;
-}
-.content p{
+}#content p{
     margin:20px auto;
     font-weight: 100;
     line-height: 25px;
@@ -129,52 +132,52 @@ button:hover {
         background: #fff;
         margin: 5px 0;
     }
-.logo{
+    /* .hamburger .active .line:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger .active .line:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger .active .line:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+ */
+ .logo{
     position: absolute;
     top: 30px;
     left:30px; 
 }
-.content{
-display: none;
-}
- /* .navlinks{
-    position: absolute;
-    top:80px;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background: black;
-    transition: 0.2s;
-    
-} */
 
 #navlinks{
-    position: absolute;
-    height: 100vh;
-    width:100%;
-    background: ;
-    top:150px;
-    left:0;
+    position: fixed;
+     height: 24vh; 
+    width:40%;
+flex-direction: column;
+    top:2px;
+    left:40%;
    transition: all .5s;
+    background: #44605e;
     text-align: center;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 #navlinks li{
     text-align: center;
     display: block;
-    margin-left: 100px;
- padding:20px 20px;
+    margin:3px auto;
+    transition: all .5s;
+ padding:5px 5px;
 }
-#navlinks li a:hover,a :active{
-   
+#navlinks a:hover,a:active{
+   cursor: pointer;
     background: none;
     color:#0ad1bd;
+    transition: .5s;
     text-decoration: none;
     
 }
-.navbar.active{
-    height:450px
-}
+ #navlinks.active{
 
-    
-}
+    display: none;
+    content: block;
+} 
